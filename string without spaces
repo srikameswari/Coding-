@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Spaces
+{
+	public static void main(String[] args) {
+		System.out.println("Enter a string ");
+Scanner sc= new Scanner(System.in);
+String str=sc.nextLine();
+String newStr=str.replaceAll(" ", "");
+System.out.println("New string after removing spaces is "+newStr);
+System.out.println("Number of characters in string are "+newStr.length());
+	}
+}
