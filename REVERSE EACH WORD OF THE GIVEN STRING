@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Reverse
+{
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String StrO = scanner.nextLine();
+        scanner.close();
+        String words[] =StrO.split("\\s");
+        String StrR = "";
+        for (int i = 0; i < words.length; i++) 
+        {
+            String word = words[i];
+            String reverseWord = "";
+            for (int j = word.length() - 1; j >= 0; j--) 
+            {
+                reverseWord = reverseWord + word.charAt(j);
+                
+            }
+            StrR = StrR + reverseWord + " ";
+        }
+        System.out.print("Reversed string : " + StrR);
+	}
+}
