@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		ArrayList<Integer>a=new ArrayList<Integer>();
+		ArrayList<Integer>b=new ArrayList<Integer>();
+		Scanner sc=new Scanner(System.in);
+		a.add(10);
+		a.add(20);
+		a.add(15);
+		System.out.println("First array: "+a);
+		b.add(100);
+		b.add(34);
+		b.add(70);
+		System.out.println("second array: "+b);
+		a.addAll(b);
+		System.out.println("Merged array list:"+a);
+		Collections.sort(a);
+		System.out.println("Sorted array list:"+a);
+		
+	}
+}
