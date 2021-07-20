@@ -1,0 +1,22 @@
+import java.util.*;
+class Main
+{
+public static void main(String args[])
+{
+HashMap<Integer,String> x=new HashMap<Integer,String>();
+Scanner sc=new Scanner(System.in);
+int n, i;
+int key;
+String value;
+System.out.println("enter n value");
+n=sc.nextInt();
+for( i=0;i<n;i++)
+{
+key=sc.nextInt();
+value=sc.next();
+x.put(key,value);
+}
+if(i>=n)
+System.out.println(x);
+}
+}
