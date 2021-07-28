@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+     Scanner in=new Scanner(System.in);
+        int n,i,j,k,n1,n2,count=0,ncount=0;
+n=in.nextInt();
+for(i=0;i<n;i++)
+{
+    n1=in.nextInt();
+    n2=in.nextInt();
+    
+
+    for(j=n1+1;j<n2;j++)
+    {
+        count=0;
+        if((j%2)!=0||j==2)
+        {
+        for(k=2;k<=j/2;k++)
+        { 
+            if(j%k==0)
+            {
+                count++;
+                break;
+            }
+        }
+        if(count==0&&j!=1)
+        {
+          
+            ncount++;
+        }
+
+    }
+    }
+    System.out.println(ncount);
+    ncount=0;
+
+
+ }
+return ;
+    }
+}
